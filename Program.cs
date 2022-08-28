@@ -7,7 +7,7 @@ namespace EntityAssignment1
     {
         static void Main(string[] args)
         {
-           
+            insert();
 
         }
         static void insert()
@@ -15,7 +15,6 @@ namespace EntityAssignment1
             var database = new timilehindbContext();
             var student = new Student();
             student.Name = "Sandrah";
-            student.MatNo = 361996;
             student.Department = "fineart";
             student.Year = 400;
             database.Students.Add(student);
